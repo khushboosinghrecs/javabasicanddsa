@@ -11,7 +11,8 @@ public class methodClass {
         int var = sum(2, 3, 1);
         System.out.println("Hello");
         System.out.println();
-        int multiply = multiplyFun();
+        methodClass s= new methodClass();
+        int multiply = s.multiplyFun();
         System.out.println(multiply);
         voidFun(4, 4);
         withoutargs();
@@ -38,7 +39,7 @@ public class methodClass {
     // }
 
      // data type and withour argument  return 
-    public static int multiplyFun(){
+    public  int multiplyFun(){
         int a= 10*3; 
         return a;
     }
