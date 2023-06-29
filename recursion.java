@@ -80,7 +80,13 @@ public class recursion {
             powerans = powerans * number;
         }
 
+        int  nume =sumofDigits(12345);
+        System.out.println(nume + "n modulo");
+
+
         powerNumInc(2, 4);
+        int fibbnaccinum = fibbonaccinum(1);
+        System.out.println(fibbnaccinum+ "fibbbbbb");
     }
 
     // 5+4+3+2+1
@@ -179,4 +185,55 @@ public class recursion {
     //     a = b;
     //     b = sum;
     // }
+
+    // 0,  1, 1, 2, 3, 5, 8, 13, 21, => fibbonacci seriese ->loop;
+
+    // 0+1==>1
+    //         1+1 ==>2
+    //                 1+2==>3
+    //                     2+3==>5
+    // prev1+prev2= next;
+
+    // 2rd fibnum= 1 => 2-2 + 2-1;=> 1
+    // 3rht fibnmum= 2; => 3-2 + 3-1=> 2
+    // 4th fibnum = 3=> 4-2 + 4-1=> 1+ 3 =3
+    // 6th fibnum = 5thfibnum + 4thfibnum;
+    // 5th fibnum = 4thfibnum + 3rdfibnum
+    // 4th fibnum = 3rdfibnum + 2ndfinbnu;
+    // 3rdfibnum = 2ndfibnum + 1stnum
+    // secondsum  = 
+    // firtfibnum = 0
+    // fib(3)= fib(1)+fib(2);
+
+    public static int fibbonaccinum(int n){
+        if(n<=1){
+            return n;
+        }
+        return fibbonaccinum(n-2) +fibbonaccinum(n-1);
+    }
+
+    // fib(4) =>3;
+    //     => fib(2)   => 1            +                   fib(3) => 2
+    //         =>fib(0) + fib(1)                       fib(2) =>1         +          fib(1);=>1
+    //             =>0   + 1                           fib(0) +fib(1)
+    //                                                     0 + 1
+
+    // sum of digits;
+
+//     num =1234567%10 => 7;
+//     7 + 1234567/10 =>123456;
+//         6 + 12345/10 =
+// 2+ 1/10=0.1
+
+
+//     7+6+5+4+3+2+1;
+//     19%10=> 9;
+//     1%10 =>1;
+// 10009/10 =1000/ 10 
+    public  static int sumofDigits(int n){
+        if(n<9){
+            return n;
+        }
+        return n%10 + sumofDigits(n/10);
+    }
 }
