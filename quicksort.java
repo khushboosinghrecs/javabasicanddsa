@@ -39,6 +39,10 @@ public class quicksort {
 //               (0, 0)  [1]       [4](2, 2) ,(4, 4) [8] , (6, 5)
 //   
 //              [1, 3, 4, 8, 9]
+
+// [1, 4, 9, 2, 8, 10, 8, 9]  => [10, 40, 90, 20, 8, 10, 8, 9]
+// multiply element of array by 10 from start index =0, and end index =3;
+
     public static void quickSort( int arr[], int low, int high){
         if(low < high){
             int pivotindex = partition(arr, low, high);
