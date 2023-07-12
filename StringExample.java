@@ -7,12 +7,15 @@ public class StringExample {
         Scanner sc= new Scanner(System.in); //System.in is a standard input stream  
         System.out.print("Enter a string: "); 
 
+        //  Khushboo singh is a softweare developer
         String str= sc.nextLine(); //reads string    "khushboo singh" => 14 => 
 
 
         System.out.println("You have entered: "+str); 
 
         System.out.print("Enter a seconde string: ");
+        //  Khushboo singh is a softweare developer
+        //  khushboo
 
         String strr= sc.next();   //reads string before the space  "khushsssssssssssssss bbbbbbbb ccccc"
         System.out.print("You have second entered: "+strr);  
@@ -28,15 +31,19 @@ public class StringExample {
         // String str2 = new String("Hello");
 
         // String concatenation => joining 
-                    // "Hello , World!" + " " + "hello" => 19;
+                    // "Hello , World!" + " " + "hello" => 19; // string concatanation
+                    // 1 + 3 => 
         String str3 = str1 + " " + str2;
+  // Hello World! Hello => 18
+//   0123456...........
+
 
         // String length
         int length = str3.length();
 
         // Accessing characters
-        char firstChar = str3.charAt(4);
-        char lastChar = str3.charAt(length - 1);
+        char firstChar = str3.charAt(4); //o
+        char lastChar = str3.charAt(length - 1); //o 
 
         for(int i =0; i<str3.length(); i++){
             

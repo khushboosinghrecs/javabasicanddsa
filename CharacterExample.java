@@ -40,6 +40,7 @@ public class CharacterExample  {
         char chh= (char)(ch1 +1);
         // ch1 ="A"
         char ch5 = Character.toLowerCase(ch1);   // Convert character to lowercase
+        char ch55 = Character.toUpperCase(ch1);
 
         System.out.println("ch1: " + ch1);
         System.out.println("ch2: " + ch2);

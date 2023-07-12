@@ -18,7 +18,7 @@ public class quicksort {
 
         int arr[] = {4, 8, 9, 1, 3, 5};
          int arr1[] = {4, 8, 9, 1, 3, 5};
-         Arrays.sort(arr1);
+         Arrays.sort(arr1); // n(logn(n))
         int low =0;
         int high = arr.length -1;
         quickSort(arr, low, high);
