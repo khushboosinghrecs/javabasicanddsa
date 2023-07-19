@@ -1,5 +1,5 @@
 // In Java, the Set interface represents an unordered collection of unique elements. It is a part of the Java Collections Framework and is implemented by several classes, including HashSet, TreeSet, LinkedHashSet, etc
-
+// [10, 20, 20,20, 30]; [10, 20, 30] =>
 // add(element): Adds an element to the set.
 // remove(element): Removes the specified element from the set.
 // contains(element): Checks if the set contains the specified element.
@@ -15,14 +15,18 @@
 // equals(object): Compares the set with another object for equality.
 
 import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Set;
 
 public class SetEx {
     public static void main(String[] args) {
 
           // Create a HashSet
-        Set<String> set = new HashSet<>();
-
+        Set<String> set = new HashSet<>(); // unsorted manner ,
+        Set<Integer> setint = new TreeSet<>(); // sorted manner 
+        setint.add(20);
+         setint.add(30);
+          setint.add(10);  // 10, 20 30
         // Add elements to the set
         set.add("Apple");
         set.add("Banana");

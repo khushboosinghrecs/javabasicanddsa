@@ -3,6 +3,7 @@ import java.util.Vector;
 
 // In Java, the Vector class is a part of the Java Collections Framework and is used to implement dynamic arrays that can grow or shrink in size.
 
+
 // 1. `add(element)`: Adds an element to the end of the vector.
 // 2. `add(index, element)`: Inserts an element at the specified index.
 // 3. `addAll(collection)`: Adds all elements from a collection to the vector.
@@ -55,6 +56,14 @@ public class VectorEx {
            vector.add(10);
            vector.add(20);
            vector.add(30);
+
+           Vector<Integer> vectorarr2 = new Vector<>();
+            vectorarr2.add(10);
+           vectorarr2.add(20);
+           vectorarr2.add(30);
+
+           vector.addAll(vectorarr2); // [10, 20, 30, 10, 20, 30] 
+
    
            // Get element at index 1
            int element = vector.get(1);
